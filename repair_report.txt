@@ -1,0 +1,76 @@
+CHAPTER INDEX REPAIR REPORT
+============================================================
+input rows      : 87
+output chapters : 78
+confidence      : medium=44, high=34
+
+NOT FIXED (needs a human look):
+  - class9_india_and_contemporary_world_1: chapter 'The French Revolution' recovery rejected (implausible span)
+  - class9_india_and_contemporary_world_1: chapter 'The French Revolution' not found in lines 0-486
+  - old_ncert_modern_india_bipan_chandra: detection ch9 '‘' has no TOC match
+  - old_ncert_modern_india_bipan_chandra: detection ch11 'Economic Impact of the British' has no TOC match
+  - old_ncert_modern_india_bipan_chandra: detection ch12 'Growth of New India—the Nation' has no TOC match
+
+PER-BOOK DETAIL
+
+=== class10_india_and_contemporary_world_2 ===
+  [ok] 8 chapters, no low-confidence rows -- left untouched
+
+=== class6_our_pasts_1 ===
+  [ok] 12 chapters, no low-confidence rows -- left untouched
+
+=== class7_our_pasts_2 ===
+  [ok] 7 chapters, no low-confidence rows -- left untouched
+
+=== class8_our_pasts_3 ===
+  [ok] 6 chapters, no low-confidence rows -- left untouched
+
+=== class9_india_and_contemporary_world_1 ===
+  [2] TOC entries found: 8
+        'The French Revolution' (page 3)
+        'Socialism in Europe and the Russian Revolution' (page 25)
+        'Nazism and the Rise of Hitler' (page 49)
+        'Forest Society and Colonialism' (page 77)
+  [3] aligned 7 detection(s) to TOC entries
+  [4] page-offset cross-check: offset=12, 6/7 chapters agree
+  [5] rejected recovery of 'The French Revolution' @line 469: only 17 lines before next chapter
+  [5] MISSING, not recoverable: 'The French Revolution' (searched lines 0-486)
+  => 7 chapters after repair (was 7 rows)
+
+=== old_ncert_ancient_india_rs_sharma ===
+  [1] dropped 1 TOC artifact(s):
+        ch  1 'The Importance of Ancient Indian Histo' (span 135 < 200)
+  [2] TOC entries found: 1
+        'The Importance of Ancient Indian History' (page None)
+  [2] TOC unusable (1 entries) -> order-only repair
+  [5] recovered 3 junk title(s); 0 still unusable
+  => 20 chapters after order-only repair
+
+=== old_ncert_medieval_india_satish_chandra ===
+  [2] TOC entries found: 0
+  [2] TOC unusable (0 entries) -> order-only repair
+  [5] recovered 0 junk title(s); 0 still unusable
+  => 6 chapters after order-only repair
+
+=== old_ncert_modern_india_bipan_chandra ===
+  [1] dropped 10 TOC artifact(s):
+        ch  1 'The Decline of the Mughal Empure' (span 2 < 200)
+        ch  2 'Indian States and Society in the 18th ' (span 2 < 200)
+        ch  3 'The Beginnings of European Settlements' (span 2 < 200)
+        ch  4 'The British Conquest of India' (span 7 < 200)
+        ch  6 'Administrative Organisation and Social' (span 4 < 200)
+        ch  7 'Social and Cultural Awakening in the F' (span 4 < 200)
+        ch  8 'The Revolt of 1857' (span 6 < 200)
+        ch 10 'India And Her Neighbours' (span 24 < 200)
+        ch 11 '-~"* Economic Impact of the British Ru' (span 1 < 200)
+        ch 12 'Growth of New India—The Nationalist Mo' (span 25 < 200)
+  [2] TOC entries found: 9
+        'The Decline of the Mughal Empure' (page None)
+        'Indian States and Society in the 18th Century' (page None)
+        'The Beginnings of European Settlements' (page None)
+        'The British Conquest of India' (page None)
+  [3] aligned 7 detection(s) to TOC entries
+  [4] page-offset cross-check unavailable (TOC page numbers missing or OCR-decoupled)
+  [5] recovered missing chapter 'Indian States and Society in the 18th Cent' @line 1176
+  [5] recovered missing chapter 'The Beginnings of European Settlements' @line 2537
+  => 12 chapters after repair (was 20 rows)

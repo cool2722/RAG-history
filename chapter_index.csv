@@ -1,0 +1,88 @@
+book,chapter_num,chapter_title,start_line,end_line,start_page,detection_method,confidence,pua_decoded
+class10_india_and_contemporary_world_2,1,The Rise of Nationalism in Europe,72,1316,3,marker,high,False
+class10_india_and_contemporary_world_2,2,The Nationalist Movement in,1317,2367,29,marker,high,False
+class10_india_and_contemporary_world_2,3,Nationalism in India,2368,3356,53,marker,high,False
+class10_india_and_contemporary_world_2,4,The Making of a Global World,3357,4594,75,marker,high,False
+class10_india_and_contemporary_world_2,5,The Age of Industrialisation,4595,5690,101,marker,high,False
+class10_india_and_contemporary_world_2,6,"Work, Life and Leisure",5691,6756,125,marker,high,False
+class10_india_and_contemporary_world_2,7,Print Culture and the Modern World,6757,7911,149,marker,high,False
+class10_india_and_contemporary_world_2,8,"Novels, Society and History",7912,8984,173,marker,high,False
+class6_our_pasts_1,1,"WHAT, WHERE, HOW AND WHEN?",505,934,14,marker,high,False
+class6_our_pasts_1,2,ON THE TRAIL OF THE,935,1350,25,marker,high,False
+class6_our_pasts_1,3,FROM GATHERING TO GROWING FOOD,1351,1792,36,marker,high,False
+class6_our_pasts_1,4,IN THE EARLIEST CITIES,1793,2322,46,marker,high,False
+class6_our_pasts_1,5,WHAT BOOKS AND BURIALS TELL US,2323,2778,57,marker,high,False
+class6_our_pasts_1,6,"KINGDOMS, KINGS AND AN EARLY REPUBLIC",2779,3242,68,marker,high,False
+class6_our_pasts_1,7,NEW QUESTIONS AND IDEAS,3243,3713,79,marker,high,False
+class6_our_pasts_1,8,"ASHOKA, THE EMPEROR WHO GAVE UP WAR",3714,4196,89,marker,high,False
+class6_our_pasts_1,9,"VITAL VILLAGES, THRIVING TOWNS",4197,4769,101,marker,high,False
+class6_our_pasts_1,10,"TRADERS, KINGS AND PILGRIMS",4770,5303,113,marker,high,False
+class6_our_pasts_1,11,NEW EMPIRES AND KINGDOMS,5304,5774,125,marker,high,False
+class6_our_pasts_1,12,"BUILDINGS, PAINTINGS AND BOOKS",5775,6361,136,marker,high,False
+class7_our_pasts_2,1,TRACING CHANGES THROUGH A THOUSAND YEARS,484,1081,15,numbered_caps,high,False
+class7_our_pasts_2,2,NEW KINGS AND KINGDOMS,1082,1696,30,numbered_caps,high,False
+class7_our_pasts_2,3,THE DELHI SULTANS,1697,2359,44,numbered_caps,high,False
+class7_our_pasts_2,4,THE MUGHAL EMPIRE,2360,4417,59,numbered_caps,high,False
+class7_our_pasts_2,7,"TRIBES, NOMADS AND SETTLED COMMUNITIES",4418,5037,105,numbered_caps,high,False
+class7_our_pasts_2,8,DEVOTIONAL PATHS TO THE DIVINE,5038,6550,118,numbered_caps,high,False
+class7_our_pasts_2,10,EIGHTEENTH-CENTURY POLITICAL FORMATIONS,6551,7388,152,numbered_caps,high,False
+class8_our_pasts_3,1,"WEAVERS, IRON SMELTERS AND FACTORY OWNERS",454,1268,12,title_band,medium,True
+class8_our_pasts_3,2,"CIVILISING THE “NATIVE”, EDUCATING THE NATION",1269,1916,28,title_band,medium,True
+class8_our_pasts_3,3,"WOMEN, CASTE AND REFORM",1917,2751,40,title_band,medium,True
+class8_our_pasts_3,4,THE CHANGING WORLD OF VISUAL ARTS,2752,3615,54,title_band,medium,True
+class8_our_pasts_3,5,THE MAKING OF THE NATIONAL MOVEMENT: 1870S-1947,3616,4811,72,title_band,medium,True
+class8_our_pasts_3,6,INDIA AFTER INDEPENDENCE,4812,5498,92,title_band,medium,True
+class9_india_and_contemporary_world_1,1,India and the Contemporary World,486,2634,15,marker,low,False
+class9_india_and_contemporary_world_1,3,India and the Contemporary World,2635,3752,61,marker,low,False
+class9_india_and_contemporary_world_1,4,India and the Contemporary World,3753,4594,89,marker,low,False
+class9_india_and_contemporary_world_1,5,India and the Contemporary World,4595,5414,109,marker,low,False
+class9_india_and_contemporary_world_1,6,India and the Contemporary World,5415,6436,129,marker,low,False
+class9_india_and_contemporary_world_1,8,India and the Contemporary World,6437,7313,153,marker+roman_repair,low,False
+class9_india_and_contemporary_world_1,8,,7314,8210,171,marker,low,False
+old_ncert_ancient_india_rs_sharma,1,The Importance of Ancient Indian History,237,372,6,marker,low,False
+old_ncert_ancient_india_rs_sharma,2,The Construction of Ancient Indian History,373,949,8,marker,low,False
+old_ncert_ancient_india_rs_sharma,3,The Geographical Setting,950,2036,15,marker,low,False
+old_ncert_ancient_india_rs_sharma,5,The Stone-Copper Phase,2037,2523,31,marker,low,False
+old_ncert_ancient_india_rs_sharma,6,The Harappan Civilization .,2524,3383,38,marker,low,False
+old_ncert_ancient_india_rs_sharma,7,Advent of the Aryans and the Age of the Rig Veda,3384,3955,50,marker,low,False
+old_ncert_ancient_india_rs_sharma,8,- The Later Vedic Phase : Transition to State and,3956,4715,56,marker,low,False
+old_ncert_ancient_india_rs_sharma,9,Jainism and. Buddhism,4716,5534,65,marker,low,False
+old_ncert_ancient_india_rs_sharma,10,¥,5535,6931,74,marker,low,False
+old_ncert_ancient_india_rs_sharma,13,The Age of the Mauryas,6932,7511,91,marker,low,False
+old_ncert_ancient_india_rs_sharma,14,Significance of the Maurya Rule,7512,8085,98,marker,low,False
+old_ncert_ancient_india_rs_sharma,15,Central Asian Contacts and Their Results,8086,8817,107,marker,low,False
+old_ncert_ancient_india_rs_sharma,16,_ The Age of the Satavahanas,8818,9298,119,marker,low,False
+old_ncert_ancient_india_rs_sharma,17,The Dawn of History in the Deep South,9299,10319,125,marker,low,False
+old_ncert_ancient_india_rs_sharma,19,The Rise and Growth of the Gupta Empire,10320,10705,139,marker,low,False
+old_ncert_ancient_india_rs_sharma,20,Life in the Gupta Age,10706,11286,145,marker,low,False
+old_ncert_ancient_india_rs_sharma,21,Spread of Civilization in Eastern India,11287,11732,153,marker,low,False
+old_ncert_ancient_india_rs_sharma,22,Harsha and His Times,11733,11982,158,marker,low,False
+old_ncert_ancient_india_rs_sharma,23,Formation of New States and Rural Expansion,11983,12636,161,marker,low,False
+old_ncert_ancient_india_rs_sharma,24,India’s Cultural Contacts with the Asian Countries,12637,13846,169,marker,low,False
+old_ncert_ancient_india_rs_sharma,27,Legacy in Science and Civilization,13847,14293,183,marker,low,False
+old_ncert_medieval_india_satish_chandra,2,Northern India: Age of the Three Empires,1086,1931,9,marker,low,False
+old_ncert_medieval_india_satish_chandra,3,The Chola Empire,1932,3835,14,marker,low,False
+old_ncert_medieval_india_satish_chandra,5,The Age of Conflict,3836,5084,26,marker,low,False
+old_ncert_medieval_india_satish_chandra,6,The Delhi Sultanat - tf,5085,6095,34,marker,low,False
+old_ncert_medieval_india_satish_chandra,7,The Delhi Sultanat-II,6096,7963,40,marker,low,False
+old_ncert_medieval_india_satish_chandra,8,"Government, and Economic and Social Life under",7964,13083,51,marker,low,False
+old_ncert_modern_india_bipan_chandra,1,The Decline of the Mughal Empure,93,95,7,marker,low,False
+old_ncert_modern_india_bipan_chandra,2,Indian States and Society in the 18th Century ..,96,98,7,marker,low,False
+old_ncert_modern_india_bipan_chandra,3,The Beginnings of European Settlements,99,101,7,marker,low,False
+old_ncert_modern_india_bipan_chandra,4,The British Conquest of India,102,109,7,marker,low,False
+old_ncert_modern_india_bipan_chandra,6,Administrative Organisation and Social and Cultural,110,114,7,marker,low,False
+old_ncert_modern_india_bipan_chandra,7,Social and Cultural Awakening in the First Half of the,115,119,7,marker,low,False
+old_ncert_modern_india_bipan_chandra,8,The Revolt of 1857,120,126,7,marker,low,False
+old_ncert_modern_india_bipan_chandra,10,India And Her Neighbours,127,151,7,marker,low,False
+old_ncert_modern_india_bipan_chandra,11,"-~""* Economic Impact of the British Rule",152,153,8,marker,low,False
+old_ncert_modern_india_bipan_chandra,12,Growth of New India—The Nationalist Movement,154,179,8,marker,low,False
+old_ncert_modern_india_bipan_chandra,1,The Decline of the Mughal Empire,180,3292,9,marker,low,False
+old_ncert_modern_india_bipan_chandra,4,The British Conquest of India,3293,4461,73,marker,low,False
+old_ncert_modern_india_bipan_chandra,5,The Structure of the Government and the,4462,5367,96,marker,low,False
+old_ncert_modern_india_bipan_chandra,6,Administrative Organisation and Social,5368,6174,115,marker,low,False
+old_ncert_modern_india_bipan_chandra,7,Social and Cultural Awakening tn the,6175,6624,132,marker,low,False
+old_ncert_modern_india_bipan_chandra,7,The Revolt of 1857,6625,7451,141,marker,low,False
+old_ncert_modern_india_bipan_chandra,9,‘,7452,8175,159,marker,low,False
+old_ncert_modern_india_bipan_chandra,10,India And Her Neighbours,8176,8972,173,marker,low,False
+old_ncert_modern_india_bipan_chandra,11,Economic Impact of the British Rule,8973,9676,190,marker,low,False
+old_ncert_modern_india_bipan_chandra,12,Growth of New India—the Nationalist,9677,15190,204,marker,low,False
