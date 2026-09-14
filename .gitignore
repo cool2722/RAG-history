@@ -1,4 +1,15 @@
-# Folders
+# --- Corpus: not ours to redistribute, and regenerable from the scripts ---
 ncert_history_corpus/
 ncert_history_corpus_text/
+ncert_history_corpus_chapters/
+chunks.jsonl
+chunks_nosections.jsonl
+
+# Vector store: large, derived, contains the full text again
+chroma_db/
+
+# --- Python ---
 venv/
+__pycache__/
+*.pyc
+.env
