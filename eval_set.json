@@ -1,0 +1,1061 @@
+{
+  "source_file": "chunks.jsonl",
+  "n_chunks": 2859,
+  "questions": [
+    {
+      "id": "E1",
+      "tier": "easy",
+      "question": "Which two brothers were given the offices of wazir and mir bakshi after Farrukh Siyar's victory?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "old_ncert_modern_india_bipan_chandra_c00005",
+        "old_ncert_modern_india_bipan_chandra_c00006",
+        "old_ncert_modern_india_bipan_chandra_c00008"
+      ],
+      "gold_chunk_candidates": [
+        "old_ncert_modern_india_bipan_chandra_c00006",
+        "old_ncert_modern_india_bipan_chandra_c00005"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": "mir bakshi|Abdullah Khan",
+      "note": ""
+    },
+    {
+      "id": "E2",
+      "tier": "easy",
+      "question": "In which month and year did Nizam-ul-Mulk relinquish his office and march south?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "old_ncert_modern_india_bipan_chandra_c00009"
+      ],
+      "gold_chunk_candidates": [
+        "old_ncert_modern_india_bipan_chandra_c00009",
+        "old_ncert_modern_india_bipan_chandra_c00030"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": [
+        "October 1724",
+        "1724.{0,120}(Deccan|south|march)",
+        "(relinquish|march).{0,120}1724"
+      ],
+      "note": "gold tightened after baseline: bare 1724 also matched a passage about Muhammad Shah's reign"
+    },
+    {
+      "id": "E3",
+      "tier": "easy",
+      "question": "Who was given the title Maharaja and appointed Governor of Gujarat under Jahandar Shah?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "old_ncert_modern_india_bipan_chandra_c00003",
+        "old_ncert_modern_india_bipan_chandra_c00004"
+      ],
+      "gold_chunk_candidates": [
+        "old_ncert_modern_india_bipan_chandra_c00003",
+        "old_ncert_modern_india_bipan_chandra_c00004",
+        "old_ncert_modern_india_bipan_chandra_c00001"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": "Ajit Singh of Marwar was awarded",
+      "note": ""
+    },
+    {
+      "id": "E4",
+      "tier": "easy",
+      "question": "Who was the Chief Advisor for the Class XII Themes in Indian History textbook?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "lehs1ps_c00003",
+        "lehs1ps_c00008",
+        "lehs1ps_c00009"
+      ],
+      "gold_chunk_candidates": [
+        "lehs1ps_c00003",
+        "lehs1ps_c00009"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": "NEELADRI BHATTACHARYA|Neeladri Bhattacharya",
+      "note": "corpus-hygiene probe: front matter must be indexed to answer"
+    },
+    {
+      "id": "E5",
+      "tier": "easy",
+      "question": "What is the title of Theme One in Themes in Indian History Part I?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "lehs101_c00000",
+        "lehs1ps_c00012"
+      ],
+      "gold_chunk_candidates": [
+        "lehs101_c00000",
+        "lehs1ps_c00012"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": "THEME ONE\\s*1\\s*BRICKS|Bricks, Beads and Bones",
+      "note": ""
+    },
+    {
+      "id": "E6",
+      "tier": "easy",
+      "question": "In which year was Jahandar Shah defeated at Agra?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "old_ncert_modern_india_bipan_chandra_c00005",
+        "old_ncert_modern_india_bipan_chandra_c00006",
+        "old_ncert_modern_india_bipan_chandra_c00051"
+      ],
+      "gold_chunk_candidates": [
+        "old_ncert_modern_india_bipan_chandra_c00005"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": "January 1713|1713",
+      "note": ""
+    },
+    {
+      "id": "E7",
+      "tier": "easy",
+      "question": "What material were Harappan seals typically made from?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "class6_our_pasts_1_c00031"
+      ],
+      "gold_chunk_candidates": [
+        "lehs101_c00000",
+        "lehs101_c00019",
+        "class6_our_pasts_1_c00035"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": [
+        "seals out of stone",
+        "stone called steatite"
+      ],
+      "note": "gold widened after baseline: retrieval returned lehs101_c00000 (a stone called steatite) at rank 1, which answers the question; the original class6-only gold was too narrow"
+    },
+    {
+      "id": "E8",
+      "tier": "easy",
+      "question": "What was the jizyah?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "old_ncert_medieval_india_satish_chandra_c00168"
+      ],
+      "gold_chunk_candidates": [
+        "old_ncert_medieval_india_satish_chandra_c00168",
+        "old_ncert_medieval_india_satish_chandra_c00136",
+        "old_ncert_medieval_india_satish_chandra_c00173"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": "tax called jizyah",
+      "note": ""
+    },
+    {
+      "id": "E9",
+      "tier": "easy",
+      "question": "Where was the capital of the Vijayanagara empire located?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "lehs203_c00000",
+        "lehs203_c00001",
+        "lehs203_c00013",
+        "lehs203_c00024"
+      ],
+      "gold_chunk_candidates": [
+        "lehs203_c00000"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": false,
+      "verified_by": "",
+      "evidence_pattern": "Hampi",
+      "note": ""
+    },
+    {
+      "id": "E10",
+      "tier": "easy",
+      "question": "What does the term sardeshmukhi refer to?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "class7_our_pasts_2_c00135"
+      ],
+      "gold_chunk_candidates": [
+        "class7_our_pasts_2_c00134",
+        "class7_our_pasts_2_c00135",
+        "class7_our_pasts_2_c00138"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": "head revenue\\s*collector|9-10 per cent",
+      "note": "answer is a glossary-box definition, but packing absorbed the box into an adjacent prose chunk (mixed:prose), so it does not rank first on lexical score -- confirm candidate 2, not 1"
+    },
+    {
+      "id": "E11",
+      "tier": "easy",
+      "question": "Which Mughal ruler's reign lasted roughly thirty years from 1719 to 1748?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "old_ncert_modern_india_bipan_chandra_c00009"
+      ],
+      "gold_chunk_candidates": [
+        "old_ncert_modern_india_bipan_chandra_c00009",
+        "old_ncert_modern_india_bipan_chandra_c00006",
+        "old_ncert_modern_india_bipan_chandra_c00013"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": "1719-1748",
+      "note": ""
+    },
+    {
+      "id": "E12",
+      "tier": "easy",
+      "question": "What is a stupa?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "class6_our_pasts_1_c00118"
+      ],
+      "gold_chunk_candidates": [
+        "class6_our_pasts_1_c00118",
+        "class6_our_pasts_1_c00120"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": "stupa means a mound",
+      "note": ""
+    },
+    {
+      "id": "M1",
+      "tier": "medium",
+      "question": "Why did Zulfiqar Khan reverse Aurangzeb's policies toward Hindu chieftains?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "old_ncert_modern_india_bipan_chandra_c00003",
+        "old_ncert_modern_india_bipan_chandra_c00004",
+        "old_ncert_modern_india_bipan_chandra_c00018"
+      ],
+      "gold_chunk_candidates": [
+        "old_ncert_modern_india_bipan_chandra_c00004",
+        "old_ncert_modern_india_bipan_chandra_c00003"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": "jizyah was abolished",
+      "note": ""
+    },
+    {
+      "id": "M2",
+      "tier": "medium",
+      "question": "What system replaced fixed-rate land revenue collection, and why was it harmful to peasants?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "old_ncert_modern_india_bipan_chandra_c00004",
+        "old_ncert_modern_india_bipan_chandra_c00023"
+      ],
+      "gold_chunk_candidates": [
+        "old_ncert_modern_india_bipan_chandra_c00004",
+        "old_ncert_modern_india_bipan_chandra_c00033",
+        "old_ncert_modern_india_bipan_chandra_c00023"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": "yarah",
+      "note": "also exercises the yarah OCR defect"
+    },
+    {
+      "id": "M3",
+      "tier": "medium",
+      "question": "How did the Saiyid brothers attempt to win over Rajput princes?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "old_ncert_modern_india_bipan_chandra_c00001",
+        "old_ncert_modern_india_bipan_chandra_c00003",
+        "old_ncert_modern_india_bipan_chandra_c00004",
+        "old_ncert_modern_india_bipan_chandra_c00007"
+      ],
+      "gold_chunk_candidates": [
+        "old_ncert_modern_india_bipan_chandra_c00006",
+        "old_ncert_modern_india_bipan_chandra_c00007"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": false,
+      "verified_by": "",
+      "evidence_pattern": "Ajit Singh|Jai Singh",
+      "note": ""
+    },
+    {
+      "id": "M4",
+      "tier": "medium",
+      "question": "What made the Emperor distrust his own wazir despite not dismissing him?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "old_ncert_modern_india_bipan_chandra_c00005"
+      ],
+      "gold_chunk_candidates": [
+        "old_ncert_modern_india_bipan_chandra_c00004"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": [
+        "intrigue against him secretly"
+      ],
+      "note": "gold corrected after baseline: retrieval returned the chunk reading 'dared not dismiss the powerful wazir, but he began to intrigue against him secretly' at rank 1 -- that is the answer"
+    },
+    {
+      "id": "M5",
+      "tier": "medium",
+      "question": "Why do historians consider oral sources controversial as historical evidence?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "lehs1ps_c00007"
+      ],
+      "gold_chunk_candidates": [
+        "lehs1ps_c00007"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": "oral evidence|verifiab",
+      "note": ""
+    },
+    {
+      "id": "M6",
+      "tier": "medium",
+      "question": "What changed about the conception of a source as history broadened?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "lehs1ps_c00007"
+      ],
+      "gold_chunk_candidates": [
+        "lehs1ps_c00007"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": "conception of what constitutes a source",
+      "note": ""
+    },
+    {
+      "id": "M7",
+      "tier": "medium",
+      "question": "What kinds of sources would a historian need to study rebels, and why are official records insufficient?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "lehs1ps_c00007"
+      ],
+      "gold_chunk_candidates": [
+        "lehs1ps_c00007"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": "diaries",
+      "note": ""
+    },
+    {
+      "id": "M8",
+      "tier": "medium",
+      "question": "How was Harappan town planning organised?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "class6_our_pasts_1_c00029",
+        "class6_our_pasts_1_c00036",
+        "class6_our_pasts_1_c00085",
+        "class6_our_pasts_1_c00086"
+      ],
+      "gold_chunk_candidates": [
+        "lehs101_c00037",
+        "class6_our_pasts_1_c00036",
+        "lehs101_c00008"
+      ],
+      "multi_chunk": true,
+      "gold_mode": "any",
+      "verified": false,
+      "verified_by": "",
+      "evidence_pattern": "citadel|drainage",
+      "note": "distractor density: substantial coverage in both books"
+    },
+    {
+      "id": "M9",
+      "tier": "medium",
+      "question": "What was the significance of Alexander Cunningham's encounter with a Harappan seal?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "lehs1ps_c00007"
+      ],
+      "gold_chunk_candidates": [
+        "lehs101_c00028",
+        "lehs101_c00029",
+        "lehs104_c00034"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": [
+        "Cunningham (first saw|could make no sense)",
+        "Cunningham"
+      ],
+      "note": ""
+    },
+    {
+      "id": "M10",
+      "tier": "medium",
+      "question": "How did the Bhakti and Sufi traditions differ in their approach to devotion?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "lehs202_c00001",
+        "lehs202_c00019",
+        "lehs202_c00020",
+        "lehs202_c00028"
+      ],
+      "gold_chunk_candidates": [
+        "lehs202_c00044",
+        "lehs202_c00001"
+      ],
+      "multi_chunk": true,
+      "gold_mode": "all",
+      "verified": false,
+      "verified_by": "",
+      "evidence_pattern": "Sufi",
+      "note": "synthesis across a chapter; gold answer needs the full chapter read"
+    },
+    {
+      "id": "M11",
+      "tier": "medium",
+      "question": "What role did zamindars play in Mughal agrarian society?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "lehs204_c00018",
+        "lehs204_c00025"
+      ],
+      "gold_chunk_candidates": [
+        "lehs204_c00024",
+        "lehs204_c00023",
+        "lehs204_c00025"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": [
+        "zamindars were|role of the zamindar|zamindars played",
+        "zamindar"
+      ],
+      "note": ""
+    },
+    {
+      "id": "M12",
+      "tier": "medium",
+      "question": "Why did NCERT rationalise textbook content in this edition?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "kehs1ps_c00003",
+        "lehs1ps_c00004",
+        "lehs2ps_c00003",
+        "lehs3ps_c00004"
+      ],
+      "gold_chunk_candidates": [
+        "lehs1ps_c00004",
+        "lehs3ps_c00004",
+        "lehs3ps_c00011"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": [
+        "rationalise the textbooks",
+        "[Rr]ationalis"
+      ],
+      "note": "extreme distractor density: identical text in 4 front-matter files"
+    },
+    {
+      "id": "M13",
+      "tier": "medium",
+      "question": "What distinguishes Themes in Indian History in scope from the Class IX-X books?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "lehs1ps_c00000",
+        "lehs1ps_c00001",
+        "lehs1ps_c00005"
+      ],
+      "gold_chunk_candidates": [
+        "lehs1ps_c00005"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": "Classes IX and X|Class XI",
+      "note": ""
+    },
+    {
+      "id": "M14",
+      "tier": "medium",
+      "question": "What were the main features of the Mauryan administration?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "old_ncert_ancient_india_rs_sharma_c00004",
+        "old_ncert_ancient_india_rs_sharma_c00005",
+        "old_ncert_ancient_india_rs_sharma_c00008",
+        "old_ncert_ancient_india_rs_sharma_c00011"
+      ],
+      "gold_chunk_candidates": [
+        "old_ncert_ancient_india_rs_sharma_c00158",
+        "old_ncert_ancient_india_rs_sharma_c00160",
+        "old_ncert_ancient_india_rs_sharma_c00159"
+      ],
+      "multi_chunk": true,
+      "gold_mode": "any",
+      "verified": false,
+      "verified_by": "",
+      "evidence_pattern": "Maurya",
+      "note": ""
+    },
+    {
+      "id": "H1",
+      "tier": "hard",
+      "question": "The Deccan's chauth and sardeshmukhi were granted to the Marathas twice under different arrangements. How did the 1711 arrangement differ from the later Saiyid agreement?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "old_ncert_modern_india_bipan_chandra_c00004",
+        "old_ncert_modern_india_bipan_chandra_c00053",
+        "old_ncert_modern_india_bipan_chandra_c00054"
+      ],
+      "gold_chunk_candidates": [
+        "old_ncert_modern_india_bipan_chandra_c00001",
+        "old_ncert_modern_india_bipan_chandra_c00004",
+        "old_ncert_modern_india_bipan_chandra_c00007"
+      ],
+      "multi_chunk": true,
+      "gold_mode": "all",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": [
+        "chauth a[un]d sardeshmukhi of the Deccan",
+        "sardeshmukhi of the Deccan"
+      ],
+      "note": "two near-identical chunks; reranker test"
+    },
+    {
+      "id": "H2",
+      "tier": "hard",
+      "question": "List every concession Zulfiqar Khan made to non-Muslim chiefs, and identify the one group he continued to suppress.",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "old_ncert_modern_india_bipan_chandra_c00002",
+        "old_ncert_modern_india_bipan_chandra_c00004",
+        "old_ncert_modern_india_bipan_chandra_c00007",
+        "old_ncert_modern_india_bipan_chandra_c00045"
+      ],
+      "gold_chunk_candidates": [
+        "old_ncert_modern_india_bipan_chandra_c00004"
+      ],
+      "multi_chunk": true,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": "Churaman Jat|Churaman",
+      "note": "aggregation across a chunk boundary"
+    },
+    {
+      "id": "H3",
+      "tier": "hard",
+      "question": "Nizam-ul-Mulk both served as wazir and later founded an independent state. What position did he hold, and what does the text give as his motive for leaving?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "old_ncert_modern_india_bipan_chandra_c00008",
+        "old_ncert_modern_india_bipan_chandra_c00009",
+        "old_ncert_modern_india_bipan_chandra_c00030",
+        "old_ncert_modern_india_bipan_chandra_c00038"
+      ],
+      "gold_chunk_candidates": [
+        "old_ncert_modern_india_bipan_chandra_c00008",
+        "old_ncert_modern_india_bipan_chandra_c00009",
+        "old_ncert_modern_india_bipan_chandra_c00030"
+      ],
+      "multi_chunk": true,
+      "gold_mode": "all",
+      "verified": false,
+      "verified_by": "",
+      "evidence_pattern": [
+        "Nizam-ul-Mulk.{0,200}(wazir|Deccan)",
+        "Nizam-ul-Mulk"
+      ],
+      "note": ""
+    },
+    {
+      "id": "H4",
+      "tier": "hard",
+      "question": "Why did the murder of Farrukh Siyar ultimately weaken rather than strengthen the Saiyid brothers?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "old_ncert_modern_india_bipan_chandra_c00006",
+        "old_ncert_modern_india_bipan_chandra_c00008"
+      ],
+      "gold_chunk_candidates": [
+        "old_ncert_modern_india_bipan_chandra_c00006",
+        "old_ncert_modern_india_bipan_chandra_c00005",
+        "old_ncert_modern_india_bipan_chandra_c00007"
+      ],
+      "multi_chunk": true,
+      "gold_mode": "all",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": [
+        "Farrukh Siyar.{0,200}(murder|deposed|killed)",
+        "Farrukh Siyar"
+      ],
+      "note": ""
+    },
+    {
+      "id": "H5",
+      "tier": "hard",
+      "question": "How does each book describe the end of the Harappan urban phase?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "class6_our_pasts_1_c00036",
+        "class6_our_pasts_1_c00123",
+        "lehs101_c00000",
+        "lehs101_c00023"
+      ],
+      "gold_chunk_candidates": [
+        "lehs101_c00000",
+        "lehs101_c00003",
+        "lehs101_c00017"
+      ],
+      "multi_chunk": true,
+      "gold_mode": "all",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": "abandoned|decline of the civilisation",
+      "note": "reworded: class6 never uses the word 'decline'"
+    },
+    {
+      "id": "H6",
+      "tier": "hard",
+      "question": "Compare how 1857 is framed in the Old NCERT Modern India versus Class XII Theme Ten.",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "lehs302_c00000",
+        "lehs302_c00003",
+        "lehs302_c00007",
+        "lehs302_c00009"
+      ],
+      "gold_chunk_candidates": [
+        "lehs302_c00040",
+        "lehs302_c00044",
+        "old_ncert_modern_india_bipan_chandra_c00251"
+      ],
+      "multi_chunk": true,
+      "gold_mode": "all",
+      "verified": false,
+      "verified_by": "",
+      "evidence_pattern": [
+        "Revolt of 1857",
+        "1857"
+      ],
+      "note": ""
+    },
+    {
+      "id": "H7",
+      "tier": "hard",
+      "question": "Which themes in Themes in Indian History were authored by contributors based outside India?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "lehs1ps_c00009"
+      ],
+      "gold_chunk_candidates": [
+        "lehs1ps_c00009"
+      ],
+      "multi_chunk": true,
+      "gold_mode": "all",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": "Chicago|Austria",
+      "note": ""
+    },
+    {
+      "id": "H8",
+      "tier": "hard",
+      "question": "What connects the Harappan seals discussed in Theme One with the historian's craft argument in the introduction?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "lehs1ps_c00007"
+      ],
+      "gold_chunk_candidates": [
+        "lehs1ps_c00007",
+        "lehs101_c00029",
+        "lehs101_c00030"
+      ],
+      "multi_chunk": true,
+      "gold_mode": "all",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": [
+        "Cunningham first saw a Harappan seal",
+        "Cunningham"
+      ],
+      "note": ""
+    },
+    {
+      "id": "H9",
+      "tier": "hard",
+      "question": "Trace how a single Mughal revenue practice contributed to both peasant oppression and state financial decline.",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "old_ncert_modern_india_bipan_chandra_c00004",
+        "old_ncert_modern_india_bipan_chandra_c00023"
+      ],
+      "gold_chunk_candidates": [
+        "old_ncert_modern_india_bipan_chandra_c00004",
+        "old_ncert_modern_india_bipan_chandra_c00033",
+        "old_ncert_modern_india_bipan_chandra_c00023"
+      ],
+      "multi_chunk": true,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": "yarah",
+      "note": ""
+    },
+    {
+      "id": "H10",
+      "tier": "hard",
+      "question": "Which Rajput ruler appears in accounts of both Jahandar Shah's and the Saiyid brothers' conciliation policies?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "old_ncert_modern_india_bipan_chandra_c00001",
+        "old_ncert_modern_india_bipan_chandra_c00003",
+        "old_ncert_modern_india_bipan_chandra_c00004",
+        "old_ncert_modern_india_bipan_chandra_c00007"
+      ],
+      "gold_chunk_candidates": [
+        "old_ncert_modern_india_bipan_chandra_c00001",
+        "old_ncert_modern_india_bipan_chandra_c00003",
+        "old_ncert_modern_india_bipan_chandra_c00004"
+      ],
+      "multi_chunk": true,
+      "gold_mode": "all",
+      "verified": false,
+      "verified_by": "",
+      "evidence_pattern": [
+        "Ajit Singh of Marwar",
+        "Ajit Singh"
+      ],
+      "note": ""
+    },
+    {
+      "id": "H11",
+      "tier": "hard",
+      "question": "How did Gandhi's methods in Civil Disobedience differ from earlier nationalist strategies?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "lehs303_c00039",
+        "lehs303_c00045"
+      ],
+      "gold_chunk_candidates": [
+        "lehs303_c00000",
+        "lehs303_c00039",
+        "lehs303_c00040"
+      ],
+      "multi_chunk": true,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": [
+        "Civil Disobedience Movement",
+        "[Cc]ivil [Dd]isobedience"
+      ],
+      "note": ""
+    },
+    {
+      "id": "H12",
+      "tier": "hard",
+      "question": "What evidence do historians use to reconstruct caste and kinship in early societies, and what are its limits?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "lehs103_c00003",
+        "lehs103_c00036",
+        "lehs103_c00037"
+      ],
+      "gold_chunk_candidates": [
+        "lehs103_c00003"
+      ],
+      "multi_chunk": true,
+      "gold_mode": "all",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": "difficult to reconstruct|kinship",
+      "note": ""
+    },
+    {
+      "id": "H13",
+      "tier": "hard",
+      "question": "Across the corpus, which periods are covered by more than one book, and how do treatments differ in depth?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "class6_our_pasts_1_c00028",
+        "class6_our_pasts_1_c00030",
+        "class6_our_pasts_1_c00031",
+        "class6_our_pasts_1_c00032"
+      ],
+      "gold_chunk_candidates": [
+        "old_ncert_ancient_india_rs_sharma_c00067",
+        "class7_our_pasts_2_c00039",
+        "lehs101_c00000"
+      ],
+      "multi_chunk": true,
+      "gold_mode": "any",
+      "verified": false,
+      "verified_by": "",
+      "evidence_pattern": "Mughal|Harappan",
+      "note": "aggregation over many chunks; gold set is necessarily broad"
+    },
+    {
+      "id": "H14",
+      "tier": "hard",
+      "question": "Why did Mughal artillery and imperial prestige not prevent decline under Muhammad Shah?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "old_ncert_modern_india_bipan_chandra_c00009"
+      ],
+      "gold_chunk_candidates": [
+        "old_ncert_modern_india_bipan_chandra_c00009",
+        "old_ncert_modern_india_bipan_chandra_c00012",
+        "old_ncert_modern_india_bipan_chandra_c00006"
+      ],
+      "multi_chunk": true,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": [
+        "Muhammad Shah.{0,200}(artillery|prestige|decline)",
+        "Muhammad Shah"
+      ],
+      "note": ""
+    },
+    {
+      "id": "X1",
+      "tier": "trick",
+      "question": "What was ijarah and how did it affect peasants?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "old_ncert_modern_india_bipan_chandra_c00004",
+        "old_ncert_modern_india_bipan_chandra_c00023"
+      ],
+      "gold_chunk_candidates": [
+        "old_ncert_modern_india_bipan_chandra_c00004",
+        "old_ncert_modern_india_bipan_chandra_c00023"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": "yarah",
+      "note": "OCR defect: corpus spells it 'yarah'; lexical retrieval should fail"
+    },
+    {
+      "id": "X2",
+      "tier": "trick",
+      "question": "What policies did Zulfiqar Khan pursue regarding jagirs and mansabdars?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "old_ncert_modern_india_bipan_chandra_c00004"
+      ],
+      "gold_chunk_candidates": [
+        "old_ncert_modern_india_bipan_chandra_c00004"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": "Zulfigar",
+      "note": "OCR defect: 'Zulfigar' variant; querying 'Zulfiqar' misses this chunk"
+    },
+    {
+      "id": "X3",
+      "tier": "trick",
+      "question": "How was the Harappan script deciphered?",
+      "expected_behaviour": "abstain",
+      "gold_chunk_ids": [
+        "lehs101_c00000",
+        "lehs101_c00019"
+      ],
+      "gold_chunk_candidates": [
+        "lehs101_c00000",
+        "lehs101_c00019"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": "undeciphered",
+      "note": "absence: corpus states the script is undeciphered"
+    },
+    {
+      "id": "X4",
+      "tier": "trick",
+      "question": "What does the corpus say about the Indus Valley's trade with Mesopotamia during the Gupta period?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "lehs101_c00017",
+        "lehs101_c00018"
+      ],
+      "gold_chunk_candidates": [
+        "lehs101_c00018",
+        "lehs101_c00017",
+        "lehs101_c00030"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": [
+        "Mesopotamian texts",
+        "Mesopotamia"
+      ],
+      "note": "false premise: Mesopotamia trade is 3rd-millennium BCE, not Gupta"
+    },
+    {
+      "id": "X5",
+      "tier": "trick",
+      "question": "What did the textbook say about the revolt?",
+      "expected_behaviour": "clarify",
+      "gold_chunk_ids": [
+        "class10_india_and_contemporary_world_2_c00008",
+        "class10_india_and_contemporary_world_2_c00018",
+        "class10_india_and_contemporary_world_2_c00019",
+        "class10_india_and_contemporary_world_2_c00020"
+      ],
+      "gold_chunk_candidates": [
+        "old_ncert_modern_india_bipan_chandra_c00246",
+        "old_ncert_modern_india_bipan_chandra_c00248",
+        "old_ncert_modern_india_bipan_chandra_c00263"
+      ],
+      "multi_chunk": true,
+      "gold_mode": "any",
+      "verified": false,
+      "verified_by": "",
+      "evidence_pattern": "[Rr]evolt",
+      "note": "ambiguous: >=5 distinct revolts in corpus"
+    },
+    {
+      "id": "X6",
+      "tier": "trick",
+      "question": "Who was 'the Emperor' who intrigued against his own ministers?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "old_ncert_modern_india_bipan_chandra_c00009"
+      ],
+      "gold_chunk_candidates": [
+        "old_ncert_modern_india_bipan_chandra_c00009"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": "intrigued against his own ministers",
+      "note": "trap: a nearby chunk matches the phrasing but is about Zulfiqar Khan's enemies"
+    },
+    {
+      "id": "X7",
+      "tier": "trick",
+      "question": "How many pages does the Class XII Part I textbook devote to Theme Two?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "lehs1ps_c00012"
+      ],
+      "gold_chunk_candidates": [
+        "lehs102_c00000",
+        "lehs102_c00001",
+        "lehs103_c00001"
+      ],
+      "multi_chunk": true,
+      "gold_mode": "all",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": "THEME TWO\\s*28|Theme Two",
+      "note": "arithmetic over retrieved metadata; two independent paths"
+    },
+    {
+      "id": "X9",
+      "tier": "trick",
+      "question": "What is the price printed on the Class XII Part I textbook, and in which reprint year?",
+      "expected_behaviour": "answer",
+      "gold_chunk_ids": [
+        "lehs1ps_c00000"
+      ],
+      "gold_chunk_candidates": [
+        "lehs1ps_c00000"
+      ],
+      "multi_chunk": false,
+      "gold_mode": "any",
+      "verified": true,
+      "verified_by": "evidence-match",
+      "evidence_pattern": "105\\.00",
+      "note": "distractors: Parts II and III show the same price"
+    },
+    {
+      "id": "X10",
+      "tier": "trick",
+      "question": "Summarise what the corpus says about Ramachandra Guha's account of the nationalist movement.",
+      "expected_behaviour": "abstain",
+      "gold_chunk_ids": [
+        "class9_india_and_contemporary_world_1_c00119",
+        "class9_india_and_contemporary_world_1_c00210",
+        "lehs1ps_c00009",
+        "lehs2ps_c00008"
+      ],
+      "gold_chunk_candidates": [
+        "class9_india_and_contemporary_world_1_c00119",
+        "class9_india_and_contemporary_world_1_c00210",
+        "lehs1ps_c00009"
+      ],
+      "multi_chunk": true,
+      "gold_mode": "any",
+      "verified": false,
+      "verified_by": "",
+      "evidence_pattern": "Ramachandra Guha",
+      "note": "trap: Guha appears as a contributor and as a cited author on cricket and forests; no account of the nationalist movement exists in corpus"
+    }
+  ]
+}
