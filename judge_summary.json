@@ -1,0 +1,32 @@
+{
+  "claude-opus-5-5": {
+    "role": "independent",
+    "n": 36,
+    "groundedness": 0.967,
+    "fully_supported": 27,
+    "unsupported_claims": 9,
+    "unverified_claims": 0
+  },
+  "claude-sonnet-5-5": {
+    "role": "self-judge",
+    "n": 36,
+    "groundedness": 0.977,
+    "fully_supported": 30,
+    "unsupported_claims": 5,
+    "unverified_claims": 1
+  },
+  "agreement": {
+    "agree": 29,
+    "n": 36,
+    "disagreements": [
+      "E9",
+      "M4",
+      "M10",
+      "M14",
+      "H4",
+      "H12",
+      "X9"
+    ]
+  },
+  "self_preference_gap": 0.01
+}

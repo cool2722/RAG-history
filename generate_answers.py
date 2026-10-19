@@ -125,26 +125,46 @@ def make_client():
     return anthropic.Anthropic(max_retries=5, **kwargs)
 
 
-def call_claude(client, model, system, user, temperature=None, max_tokens=MAX_TOKENS):
-    """Returns (text, input_tokens, output_tokens). `temperature` is only sent
-    if given; if the installed SDK or the model rejects it (newer SDKs/models
-    removed the parameter), retries once without it."""
-    kwargs = dict(model=model, max_tokens=max_tokens, system=system,
-                  messages=[{"role": "user", "content": user}])
-    if temperature is None:
-        resp = client.messages.create(**kwargs)
-    else:
-        try:
-            resp = client.messages.create(temperature=temperature, **kwargs)
-        except TypeError:
-            print("  (SDK has no temperature parameter; retrying without it)")
-            resp = client.messages.create(**kwargs)
-        except Exception as e:
-            if "temperature" in str(e).lower():
-                print("  (model rejected temperature; retrying without it)")
-                resp = client.messages.create(**kwargs)
-            else:
+_TEMP_NOTICE = {"shown": False, "applied": None}
+
+
+def call_claude(client, model, system, user, temperature=0.0, max_tokens=MAX_TOKENS):
+    """Returns (text, input_tokens, output_tokens).
+
+    Tries to apply `temperature` (0 = as deterministic as the API allows).
+    Order of attempts: SDK keyword -> raw request body (for SDK versions whose
+    signature no longer lists it) -> no temperature at all. Whichever works is
+    reported once, so the README can state what was actually used."""
+    base = dict(model=model, max_tokens=max_tokens, system=system,
+                messages=[{"role": "user", "content": user}])
+
+    def note(msg):
+        if not _TEMP_NOTICE["shown"]:
+            print("  [temperature] " + msg)
+            _TEMP_NOTICE["shown"] = True
+
+    if temperature is not None:
+        for how in ("kwarg", "body"):
+            try:
+                if how == "kwarg":
+                    resp = client.messages.create(temperature=temperature, **base)
+                else:
+                    resp = client.messages.create(extra_body={"temperature": temperature}, **base)
+                note(f"applied temperature={temperature} via {how}")
+                _TEMP_NOTICE["applied"] = temperature
+                return _unpack(resp)
+            except TypeError:
+                continue  # SDK signature rejects it; try the raw body
+            except Exception as e:
+                if "temperature" in str(e).lower():
+                    break  # the API/model itself rejects it
                 raise
+        note("NOT applied: SDK/model rejects temperature. Runs may vary slightly.")
+        _TEMP_NOTICE["applied"] = None
+    return _unpack(client.messages.create(**base))
+
+
+def _unpack(resp):
     text = "".join(b.text for b in resp.content if getattr(b, "type", "") == "text")
     return text, resp.usage.input_tokens, resp.usage.output_tokens
 
@@ -229,8 +249,8 @@ def main():
     ap.add_argument("--out", default=DEFAULT_OUT)
     ap.add_argument("--model", default=DEFAULT_MODEL)
     ap.add_argument("--k", type=int, default=DEFAULT_K)
-    ap.add_argument("--temperature", type=float, default=None,
-                    help="omit by default; some models/SDKs no longer accept it")
+    ap.add_argument("--temperature", type=float, default=0.0,
+                    help="default 0; falls back to none if the API rejects it")
     ap.add_argument("--ids", help="comma-separated question IDs, e.g. E1,X3")
     ap.add_argument("--limit", type=int, help="only the first N questions")
     ap.add_argument("--force", action="store_true", help="redo already-answered questions")
@@ -318,6 +338,7 @@ def main():
             "retried": retried, "loose_parse": loose,
             "raw": text,
             "model": args.model,
+            "temperature_applied": _TEMP_NOTICE["applied"],
             "input_tokens": ti, "output_tokens": to,
         }
         results[q["id"]] = rec
