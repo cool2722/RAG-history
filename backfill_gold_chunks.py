@@ -255,7 +255,7 @@ QUESTIONS = [
          q="How was the Harappan script deciphered?",
          must=[r"undeciphered"], books=["lehs101"],
          note="absence: corpus states the script is undeciphered"),
-    dict(id="X4", tier="trick",
+    dict(id="X4", tier="trick", expected_behaviour="abstain",
          evidence=[r"""Mesopotamian texts""", r"""Mesopotamia"""],
          q="What does the corpus say about the Indus Valley's trade with Mesopotamia during the Gupta period?",
          must=[r"Mesopotamia"], books=["lehs101"],
